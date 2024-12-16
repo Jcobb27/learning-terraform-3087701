@@ -15,8 +15,7 @@ data "aws_ami" "app_ami" {
 }
 
 data "aws_vpc" "default" {
-  ami           = data.aws_ami.app_ami.id
-  instance_type = var.instance_type
+  default = true
 }
 
 resource "aws_instance" "blog" {
