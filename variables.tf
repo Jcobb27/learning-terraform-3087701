@@ -8,7 +8,7 @@ variable "ami_filter" {
 
     type = object({
       name = string
-      ownder = string
+      owner = string
     })
 
     default = {
